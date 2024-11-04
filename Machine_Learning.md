@@ -26,8 +26,55 @@ A popular example of machine learning is email spam detection. The model is trai
 
 
 </details>
+
+<details>
+   <summary>Types of Machine Learning</summary>
+
+## Based on supervision
+According to the supervision required, there are mainly four types of machine learning.
+- Supervised Learning
+  - Classification
+  - Regression
+- Unsupervised Learning
+  - Clustering
+  - Dimensionality Reduction
+  - Anomaly Detection
+  - Association
+- Semi-supervised Learning
+- Reinforcement Learning
+
+Here’s a brief overview of the four main types of machine learning based on supervision, along with examples for each:
+### Supervised Learning
+In supervised learning, models are trained on labeled data where the target outcome is known. The goal is to map inputs to outputs.
+   - **Classification**: Used to categorize data into predefined classes.
+     - **Example**: Spam detection in emails, where emails are classified as "spam" or "not spam."
+   - **Regression**: Predicts continuous outcomes based on input variables.
+     - **Example**: Predicting house prices based on factors like square footage, location, and age of the house.
+
+### Unsupervised Learning
+In unsupervised learning, the model is trained on unlabeled data to identify patterns or groupings within the data.
+   - **Clustering**: Groups data into clusters based on similarity.
+     - **Example**: Customer segmentation, where customers are grouped by purchasing behavior for targeted marketing.
+   - **Dimensionality Reduction**: Reduces the number of features while retaining significant information.
+     - **Example**: Principal Component Analysis (PCA) for simplifying high-dimensional datasets like image data.
+   - **Anomaly Detection**: Identifies outliers or unusual data points.
+     - **Example**: Fraud detection in credit card transactions, where unusual spending patterns may indicate fraud.
+   - **Association**: Finds associations or rules in data.
+     - **Example**: Market basket analysis in retail, where items frequently bought together are identified (e.g., milk and bread).
+
+### Semi-Supervised Learning
+In semi-supervised learning, the model is trained on a small amount of labeled data along with a larger set of unlabeled data, leveraging both to improve performance.
+   - **Example**: Image recognition, where only a few images in a dataset are labeled, but the model uses both labeled and unlabeled images to identify objects more accurately.
+
+### Reinforcement Learning
+In reinforcement learning, an agent learns to make decisions by interacting with an environment, aiming to maximize cumulative rewards over time.
+   - **Example**: Training a robot to navigate a maze, where it receives rewards for reaching certain points and penalties for collisions, learning the optimal path over time.
+</details>
+
 <details>
   <summary>Application of Machine Learning</summary>
+
+## Application
 we will see the application of machine learning in B2B and B2C contexts:
 
 ### B2B Applications of Machine Learning
@@ -49,6 +96,7 @@ we will see the application of machine learning in B2B and B2C contexts:
 <details>
   <summary>Machine Learning Development Life Cycle (MLDLC)</summary>
 
+## MLDLC
 MLDLC is a framework for developing machine learning models in a structured and systematic way. It includes several steps, from problem definition to deployment, that are focused to build robust, accurate, and scalable machine learning models.
 
 Here’s a step-by-step guide to solving a machine learning problem using the Machine Learning Development Cycle (MLDC), illustrated with an example of predicting house prices:
