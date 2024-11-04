@@ -28,7 +28,7 @@ A popular example of machine learning is email spam detection. The model is trai
 </details>
 
 <details>
-   <summary>Types of Machine Learning</summary>
+   <summary>Types of Machine Learning : [ Based on Supervision ] </summary>
 
 ## Based on supervision
 According to the supervision required, there are mainly four types of machine learning.
@@ -70,6 +70,10 @@ In semi-supervised learning, the model is trained on a small amount of labeled d
 In reinforcement learning, an agent learns to make decisions by interacting with an environment, aiming to maximize cumulative rewards over time.
    - **Example**: Training a robot to navigate a maze, where it receives rewards for reaching certain points and penalties for collisions, learning the optimal path over time.
 
+</details>
+
+<details>
+   <summary>Types of Machine Learning : [ Based on Production ] </summary>
 
 ## Based on production
 Based on production, machine learning models can be categorized as:
@@ -155,6 +159,49 @@ The differences between offline learning and online learning are as follows:
 - **Online Learning**: Primarily in active research, with specialized tools like MOA, SAMOA, scikit-multiflow, and streamDM for handling streaming data. 
 
 This summarizes key differences, with offline learning being more suitable for static datasets and easier maintenance, while online learning is advantageous in environments with constantly changing data, despite its higher complexity and resource requirements.
+</details>
+
+<details>
+   <summary>Types of Machine Learning : [ instance-based and model-based ] </summary>
+
+## instance-based and model-based
+In machine learning, models can be broadly categorized as **instance-based** and **model-based** learning methods. These categories refer to how the algorithm generalizes from the training data to make predictions.
+
+### Instance-Based Learning
+Instance-based learning, also known as **memory-based learning**, involves storing training data instances and making predictions by comparing new data points to these stored instances. Instead of explicitly creating a model, the algorithm uses the stored examples directly to make predictions. It relies heavily on similarity measures, such as Euclidean distance, to identify the closest data points.
+
+- **How It Works**: When a prediction is required, the algorithm finds the most similar instances in the stored dataset and makes a decision based on these similarities (often through a "majority vote" or averaging).
+- **Examples**:
+  - **k-Nearest Neighbors (k-NN)**: Predicts the label of a new point based on the majority label of its k-nearest neighbors.
+  - **Locally Weighted Regression**: Estimates a prediction for a new instance by fitting a local model around that instance using nearby data points.
+- **Advantages**:
+  - Adaptable to new patterns since it doesn't rely on a fixed model.
+  - Simple to understand and implement.
+- **Disadvantages**:
+  - Computationally expensive at prediction time, as it requires searching through the dataset for each prediction.
+  - Sensitive to irrelevant or noisy features, which can distort the similarity measures.
+
+### 2. Model-Based Learning
+Model-based learning involves building an explicit model of the data based on the training dataset. The algorithm learns a set of parameters or rules from the training data that represent its general structure, allowing it to make predictions without directly referencing the entire dataset. This approach assumes that there is an underlying relationship in the data that can be captured mathematically.
+
+- **How It Works**: The algorithm fits a model (e.g., a line, curve, or a set of rules) to the training data. After training, the model makes predictions on new data based on this generalized representation.
+- **Examples**:
+  - **Linear Regression**: Fits a linear relationship between input features and output.
+  - **Decision Trees**: Creates a tree structure of decision rules to classify data.
+  - **Neural Networks**: Learns a complex, non-linear representation through multiple layers of parameters.
+- **Advantages**:
+  - Fast predictions, as the model uses learned parameters instead of searching through instances.
+  - Can generalize well to new data, especially when the model captures the underlying pattern correctly.
+- **Disadvantages**:
+  - Requires careful tuning and may not perform well if the model is overly simplistic or too complex (overfitting).
+  - Less adaptable than instance-based learning for new or changing patterns unless retrained.
+
+In summary:
+- **Instance-Based Learning** is useful when data is relatively simple and a local approach works best. However, it can be computationally intensive.
+- **Model-Based Learning** is ideal when the data has an underlying pattern that can be effectively captured by a mathematical model, making it faster for predictions and more scalable.
+
+![instance_vs_model_based](images/instance_vs_model_based.png)
+
 </details>
 
 <details>
