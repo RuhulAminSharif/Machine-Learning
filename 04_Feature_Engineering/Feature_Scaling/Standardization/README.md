@@ -18,7 +18,7 @@ Standardization is crucial in many machine learning algorithms, particularly tho
 #### When to Use Standardization
 1. **Algorithms Sensitive to Feature Scale**: Use standardization for algorithms like KNN, SVM, PCA, and neural networks where the scale of the features can affect performance.
 2. **Data with Normal Distribution**: Standardization works well when the data follows a Gaussian distribution or is approximately normal.
-3. **Mixed Feature Ranges**: When your dataset contains features with different ranges, standardization ensures that each feature contributes equally to the model.
+3. **Mixed Feature Ranges**: When the dataset contains features with different ranges, standardization ensures that each feature contributes equally to the model.
 4. **Gradient Descent Optimization**: When using algorithms that involve gradient descent, standardization helps in achieving faster and more stable convergence.
 
 #### Summary
